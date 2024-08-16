@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Menu2Activity"
+        android:background="#F44336">
+
+    <!-- CardView para la Bienvenida y el Nombre del Usuario -->
+    <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/cardViewUsuarioInfo"
+            app:layout_constraintVertical_bias="0.2">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+            <!-- Texto de Bienvenida -->
+            <TextView
+                    android:id="@+id/textViewBienvenido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bienvenido"
+                    android:textSize="30sp"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"/>
+
+            <!-- Texto del Nombre del Usuario -->
+            <TextView
+                    android:id="@+id/textViewNombreUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre del Usuario"
+                    android:textSize="24sp"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView para la imagen y la información del usuario -->
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewUsuarioInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="228dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center">
+
+            <!-- Imagen del usuario con borde redondeado -->
+            <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="0dp"
+                    android:layout_height="157dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/empleado"
+                    android:layout_marginEnd="16dp"
+                    android:contentDescription="Imagen del usuario"
+                    android:padding="4dp"
+                    android:layout_gravity="center"/> <!-- Imagen con borde redondeado -->
+
+            <!-- Línea vertical para separar la imagen y la información -->
+            <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#F44336"
+                    android:layout_marginEnd="16dp" />
+
+            <!-- Información del usuario -->
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:gravity="start"> <!-- Alinear el contenido a la izquierda -->
+
+                <TextView
+                        android:id="@+id/txtCodigo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Código:"
+                        android:textSize="18sp"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Usuario:"
+                        android:textSize="18sp"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre:"
+                        android:textSize="18sp"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DNI:"
+                        android:textSize="18sp"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Celular:"
+                        android:textSize="18sp"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

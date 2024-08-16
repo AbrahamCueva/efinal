@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+            android:id="@+id/tvIdProducto"
+            android:layout_width="124dp"
+            android:layout_height="39dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="Codigo Producto" tools:layout_editor_absoluteY="0dp"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" app:layout_constraintHorizontal_bias="0.0" android:textStyle="bold"
+            android:textColor="#020103"/>
+
+    <TextView
+            android:id="@+id/etCantidad"
+            android:layout_width="178dp"
+            android:layout_height="39dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="Cantidad"
+            tools:layout_editor_absoluteY="0dp" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="1.0" android:textStyle="bold" android:textColor="#020103"/>
+
+    <TextView
+            android:id="@+id/etProducto"
+            android:layout_width="103dp"
+            android:layout_height="39dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="Producto"
+            tools:layout_editor_absoluteY="0dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            app:layout_constraintHorizontal_bias="0.406" android:textStyle="bold" android:textColor="#020103"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

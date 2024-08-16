@@ -1,0 +1,82 @@
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <!-- Contenedor principal con margen inferior -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+        <!-- Imagen principal que se asemeja a la del ejemplo -->
+        <ImageView
+                android:id="@+id/topImage"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:src="@drawable/your_top_image"
+                android:contentDescription="@null"/>
+
+        <!-- CardView que contiene el texto y botones -->
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:gravity="center_horizontal">
+
+                <TextView
+                        android:id="@+id/welcomeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bienvenidos a MEGAMAXI"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="#FF0000"/>
+
+                <TextView
+                        android:id="@+id/descriptionTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vive lo extraordinario mientras nuestro supermercado visionario te lleva a un mundo de posibilidades infinitas, donde la innovación da forma a tu experiencia de compra."
+                        android:textSize="16sp"
+                        android:textColor="#777777"
+                        android:gravity="center"
+                        android:layout_marginTop="16dp"/>
+
+                <Button
+                        android:id="@+id/continueButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ingresar"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/button_border_red"
+                        android:textColor="#FF1400"/>
+
+                <Button
+                        android:id="@+id/exitButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Salir"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_button_background"
+                        android:backgroundTint="#FF1400"
+                        android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</FrameLayout>

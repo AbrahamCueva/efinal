@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fondo12">
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                android:padding="16dp">
+
+            <LinearLayout
+                    android:layout_width="345dp"
+                    android:layout_height="410dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                <!-- Logo -->
+                <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="321dp"
+                        android:layout_height="96dp"
+                        android:layout_marginBottom="40dp"
+                        app:srcCompat="@drawable/logo"
+                        android:contentDescription="Logo"/>
+
+                <!-- Campo de texto para el usuario -->
+                <EditText
+                        android:id="@+id/edtUsuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="@android:color/darker_gray"
+                        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                        android:hint="Ingrese su usuario"
+                        android:textColorHint="@color/eliminarVenta"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="10dp"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        style="@style/Widget.AppCompat.AutoCompleteTextView"/>
+
+                <!-- Campo de texto para la contraseña con ícono de ojo -->
+                <EditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="@android:color/darker_gray"
+                        android:drawableLeft="@drawable/ic_https_black_24dp"
+                        android:hint="Ingrese su contraseña"
+                        android:textColorHint="@color/eliminarVenta"
+                        android:paddingLeft="10dp"
+                        android:inputType="textPassword"
+                        android:textColor="#F44336"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        style="@style/Widget.AppCompat.AutoCompleteTextView"
+                        android:textStyle="bold"/>
+
+                <!-- Botón de iniciar sesión -->
+                <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_button_background"
+                        android:text="Iniciar Sesión"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#FF1400"
+                        android:textSize="18sp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"/>
+
+                <!-- Texto de registro -->
+                <TextView
+                        android:id="@+id/tvRegisterPrompt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="¿Aún no tienes cuenta?"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:gravity="center"/>
+
+                <!-- Texto subrayado para crear cuenta -->
+                <TextView
+                        android:id="@+id/tvCreateAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Crear una"
+                        android:textColor="#F44336"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:onClick="goToRegister"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.rico.evfinal">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/icon_app"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/icon_app"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".RegisterActivity">
+        </activity>
+        <activity
+                android:name=".VentasActivity"
+                android:exported="false"/>
+        <activity android:name=".Menu2Activity">
+        </activity>
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity android:name=".HistoriaActivity">
+        </activity>
+        <activity
+                android:name=".ProductosActivity"
+                android:exported="false"/>
+
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyBWGtJqk2c-d8lAzwspPraB-p-pP04b2UY"/>
+
+        <activity
+                android:name=".MenuActivity"
+                android:exported="false"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

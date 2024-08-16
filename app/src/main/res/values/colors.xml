@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="buttonColor">#33CC00</color>
+    <color name="buttonColorAccent">#33CCFF</color>
+    <color name="calcularTotal">#FFCCFF</color>
+    <color name="registrarVenta">#990099</color>
+    <color name="actualizarVenta">#FF9900</color>
+    <color name="eliminarVenta">#FF0000</color>
+</resources>

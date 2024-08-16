@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/overflowMenu"
+            android:icon="@drawable/ic_store_white_28dp"
+            android:title="Menu2"
+            app:showAsAction="always">
+        <menu>
+            <item
+                    android:id="@+id/productos"
+                    android:icon="@drawable/ic_shopping_basket_black_24dp"
+                    android:title="Productos"
+                    app:showAsAction="never" />
+
+            <item
+                    android:id="@+id/ventas"
+                    android:icon="@drawable/ic_shop_black_24dp"
+                    android:title="Ventas"
+                    app:showAsAction="never" />
+
+            <item
+                    android:id="@+id/exit"
+                    android:icon="@drawable/ic_exit_to_app_black_24dp"
+                    android:title="Cerrar App"
+                    app:showAsAction="never" />
+
+        </menu>
+    </item>
+</menu>
